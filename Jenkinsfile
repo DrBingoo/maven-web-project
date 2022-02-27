@@ -5,6 +5,11 @@ pipeline {
       jdk 'JDK 1.8'
     }
     stages {
+        stage("git clone") {
+            steps {
+                git branch: 'master', url: 'https://github.com/DrBingoo/DevOpsP2.git'
+            }
+        }
         stage('Build') {
             steps {
                 echo 'Building..'

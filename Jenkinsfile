@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage("git clone") {
             steps {
-                git branch: 'master', url: 'https://github.com/DrBingoo/DevOpsP2.git'
+                git branch: 'master', url: 'https://github.com/DrBingoo/maven-web-project.git'
             }
         }
         stage('Build') {
